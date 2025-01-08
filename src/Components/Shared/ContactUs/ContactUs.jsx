@@ -322,7 +322,7 @@ const ContactUs = () => {
                                                 />
                                             </div>
                                             <div
-                                                className="fw-col-xs-12 fw-col-md-6 fw-col-lg-6 contact-form-padding mb-4">
+                                                className="fw-col-xs-12 fw-col-md-6 fw-col-lg-6 contact-form-padding mb-4 selcat_contact">
                                                 <select id="workTypeId" name="workTypeId" onChange={handlechange}>
                                                     workTypeData
                                                     <option value="--Select--"  >--Select--

@@ -20,9 +20,9 @@
     right: 136px;
 }
 
-.vector-line-1 {
+/* .vector-line-1 {
     margin-top: 180px;
-}
+} */
 
 .banner_vector .vector-line-1 {
     margin-top: 80px;
@@ -234,9 +234,9 @@ select {
         margin-top: 30px !important;
     }
 
-    .vector-heading {
+    /* .vector-heading {
         margin-top: 120px;
-    }
+    } */
 
     .privacy_policy_inner h2 {
         font-size: 16px !important;
@@ -245,8 +245,18 @@ select {
     .privacy_policy_wepper {
         padding: 15px !important;
     }
-}
 
+   
+}
+@media (max-width:576px) {
+    .popup_content img{
+        height: auto;
+    }
+
+    .modal-dialog{
+        margin-top: 90px;
+    }
+}
 
 
 
@@ -345,4 +355,8 @@ select {
 
 .textblock-shortcode p {
     text-align: start;
+}
+
+.active:after {
+    content: unset;
 }

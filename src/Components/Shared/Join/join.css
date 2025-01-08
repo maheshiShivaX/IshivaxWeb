@@ -1,6 +1,7 @@
 .join_wepper {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 100px;
+    padding-bottom: 100px;
+    background: rgb(241, 241, 241);
 }
 
 .join_heding_content {
@@ -53,7 +54,7 @@
 
 .join_form_wepper {
     border-radius: 35px;
-    background: #EBEBEB;
+    /* background: #ffffff; */
     padding: 35px;
     margin-top: 80px;
 }
@@ -73,21 +74,21 @@
 
 .join_input input {
     padding: 15.545px 29.894px;
-    border-radius: 10px;
-    border: 1.196px solid #3A3A3A;
-    background-color: transparent;
-    color: #313131;
+    border-radius: 50px;
+    /* border: 1.196px solid #3A3A3A; */
+    background-color: #fff;
+    color: rgba(5, 6, 16, 1);
     font-family: Manrope;
-    font-size: 19.132px;
+    font-size: 15.132px;
     font-style: normal;
-    font-weight: 600;
+
     line-height: 160%;
 }
 
 .form-control:focus {
     box-shadow: unset;
     border-color: #313131;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .join_input select {
@@ -100,12 +101,12 @@
     background-position: right 20px center;
     background-size: 13px;
     padding: 15.545px 29.894px;
-    border-radius: 10px !important;
-    border: 1.196px solid #3A3A3A;
-    background-color: transparent;
+    border-radius: 50px !important;
+    /* border: 1.196px solid #3A3A3A; */
+    background-color: #fff;
     color: #313131;
     font-family: Manrope;
-    font-size: 19.132px;
+    font-size: 15.132px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -117,6 +118,7 @@
 .join_input select:hover,
 .join_input select:focus {
     border-color: #313131;
+    background-color: #fff;
     /* Change border color on hover or focus */
 }
 
@@ -167,10 +169,23 @@
 
     .join_form_wepper {
         padding: 35px 0;
+        margin: 0;
     }
 
     .join_heding_content h2 {
         font-size: 13px;
+    }
+
+    .join_wepper {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+
+    .join_heding_content h2 {
+        margin-bottom: 10px;
+    }
+    .join_form_wepper form{
+        padding: 0;
     }
 
 }

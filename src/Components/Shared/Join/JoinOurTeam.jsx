@@ -10,21 +10,21 @@ const JoinOurTeam = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [postData, setPostData] = useState();
-    
+
     const [formData, setFormData] = useState({
         firstName: "",
-        lastName:"",
+        lastName: "",
         emailid: "",
         mobileNo: "",
         postEnquiryId: 0,
         isActive: true,
         createdBy: 0,
-        file:'',
-        currentCtc:'',
-        expectedCtc:'',
-        jobPostId:0,
-        noticePeriod:'',
-        resumePath:''
+        file: '',
+        currentCtc: '',
+        expectedCtc: '',
+        jobPostId: 0,
+        noticePeriod: '',
+        resumePath: ''
     });
     const scrollToForm = () => {
         const formSection = document.getElementById('form_get');
@@ -52,7 +52,7 @@ const JoinOurTeam = () => {
     }, [])
 
     const handlechange = (e) => {
-        const { name, value, type} = e.target;
+        const { name, value, type } = e.target;
 
         if (type === 'radio') {
             // For radio buttons, simply set the selected value
@@ -92,27 +92,27 @@ const JoinOurTeam = () => {
         finally {
             setFormData({
                 firstName: "",
-                lastName:"",
+                lastName: "",
                 emailid: "",
                 mobileNo: "",
                 postEnquiryId: 0,
                 isActive: true,
                 createdBy: 0,
-                file:'',
-                currentCtc:'',
-                expectedCtc:'',
-                jobPostId:0,
-                noticePeriod:'',
-                resumePath:''
+                file: '',
+                currentCtc: '',
+                expectedCtc: '',
+                jobPostId: 0,
+                noticePeriod: '',
+                resumePath: ''
             });
-            
+
         }
     };
 
     return (
-        <div> <div style={{position:'relative', zIndex:'9999999999' }}>
+        <div> <div style={{ position: 'relative', zIndex: '9999999999' }}>
             <Toaster position="top-right" />
-            </div>
+        </div>
             <Header />
             <section>
                 <div className="fw-main-row black-bg-content">
@@ -421,115 +421,115 @@ const JoinOurTeam = () => {
                         </div>
                     </div>
                     <div className="row join_form_wepper" id="form_get">
-                       
+
 
                         <form onSubmit={onSave}>
 
-<div className="">
-    <h2>Join Our Team</h2>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-           
-            <input type="text" placeholder="First Name" id="firstName" value={formData.firstName} className="form-control"
-                        name="firstName" required onChange={handlechange} />
+                            <div className="">
+                                <h2>Join Our Team</h2>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
 
-            
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-        <input type="text" placeholder="Last Name" id="lastName" value={formData.lastName} className="form-control"
-                        name="lastName" required onChange={handlechange} />
-         
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-     
-            <input type="email" placeholder="Email Address" id="emailid" value={formData.emailid} className="form-control"
-                        name="emailid" required onChange={handlechange} />
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-          
-            <input type="text" placeholder="Phone Number" className="form-control" id="firstName" value={formData.mobileNo}
-                        name="mobileNo" required onChange={handlechange} />
-            
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-       
-            <input type="text" placeholder="Current CTC" className="form-control" id="currentCtc" value={formData.currentCtc}
-                        name="currentCtc" required onChange={handlechange} />
-
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-           
-            <input type="text" placeholder="Expected CTC" className="form-control" id="expectedCtc" value={formData.expectedCtc}
-                        name="expectedCtc" required onChange={handlechange} />
-                        
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-        <select id="jobPostId" name="jobPostId" onChange={handlechange}>
-                        workTypeData
-                        <option value="--Select--"  >--Select--
-                        </option>
-                        {postData?.map((item, i) => (
-                            <option key={i} value={item.jobPostId}>{item.title}
-                            </option>
-
-                        ))}
+                                        <input type="text" placeholder="First Name" id="firstName" value={formData.firstName} className="form-control"
+                                            name="firstName" required onChange={handlechange} />
 
 
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+                                        <input type="text" placeholder="Last Name" id="lastName" value={formData.lastName} className="form-control"
+                                            name="lastName" required onChange={handlechange} />
 
-                    </select>
-        </div>
-    </div>
-    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div className="join_input">
-            <select id="noticePeriod" name="noticePeriod" onChange={handlechange} >
-                <option value="">Notice Period</option>
-                <option value="1 Month">1 Month</option>
-                <option value="2 Month">2 Month</option>
-                <option value="3 Month">3 Month</option>
-                
-            </select>
-        </div>
-    </div>
-    <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div className="join_input">
-            <div className="file-upload">
-           
-                <input type="file" className="form-control" id="file" name="file" accept="image/png, image/jpeg" onChange={handlechange} />
-            </div>
-        </div>
-    </div>
-    <div className="col-xxl-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-4">
-        <div className="join_input">
-            <div className="fw-row">
-                <button type="submit" className="frame-66-Y1q frame-portfolio-button">
-                    <div className="frame-66-Y1q-text">Send Message</div>
-                    <div className="frame-66-Y1q-arrow"></div>
-                </button>
-            </div>
-        </div>
-    </div>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
 
-</div>
-</form>
+                                        <input type="email" placeholder="Email Address" id="emailid" value={formData.emailid} className="form-control"
+                                            name="emailid" required onChange={handlechange} />
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+
+                                        <input type="text" placeholder="Phone Number" className="form-control" id="firstName" value={formData.mobileNo}
+                                            name="mobileNo" required onChange={handlechange} />
+
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+
+                                        <input type="text" placeholder="Current CTC" className="form-control" id="currentCtc" value={formData.currentCtc}
+                                            name="currentCtc" required onChange={handlechange} />
+
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+
+                                        <input type="text" placeholder="Expected CTC" className="form-control" id="expectedCtc" value={formData.expectedCtc}
+                                            name="expectedCtc" required onChange={handlechange} />
+
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+                                        <select id="jobPostId" name="jobPostId" onChange={handlechange}>
+                                            workTypeData
+                                            <option value="--Select--"  >--Select--
+                                            </option>
+                                            {postData?.map((item, i) => (
+                                                <option key={i} value={item.jobPostId}>{item.title}
+                                                </option>
+
+                                            ))}
+
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div className="join_input">
+                                        <select id="noticePeriod" name="noticePeriod" onChange={handlechange} >
+                                            <option value="">Notice Period</option>
+                                            <option value="1 Month">1 Month</option>
+                                            <option value="2 Month">2 Month</option>
+                                            <option value="3 Month">3 Month</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div className="join_input">
+                                        <div className="file-upload">
+
+                                            <input type="file" className="form-control" id="file" name="file" accept="image/png, image/jpeg" onChange={handlechange} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-4">
+                                    <div className="join_input">
+                                        <div className="fw-row">
+                                            <button type="submit" className="frame-66-Y1q frame-portfolio-button">
+                                                <div className="frame-66-Y1q-text">Send Message</div>
+                                                <div className="frame-66-Y1q-arrow"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
 
 
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

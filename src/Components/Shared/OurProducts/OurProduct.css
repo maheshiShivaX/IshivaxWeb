@@ -1,0 +1,173 @@
+.ourproducts_tabs .nav-tabs {
+    border: unset;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.nav-tabs .nav-link {
+    border: unset;
+    color: #333;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+.nav-tabs .nav-link.active {
+    border: unset;
+    color: #000;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.our_product_wepper_main {
+    margin-top: 88px;
+}
+
+/* .bg_color_our_product_weeper {
+    height: 520px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background: url(../../../../public/images/life-code-banner.png) #A80C23 50% / cover no-repeat;
+} */
+.bg_color_our_product_weeper img {
+    border-radius: 50px;
+}
+
+.bg_color_our_product_weeper .row {
+
+    padding: 20px 80px 0;
+}
+
+.our_product_hedding {
+    text-align: start;
+}
+
+.our_product_hedding h2 {
+    color: #282828;
+    font-family: Syne;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.our_product_hedding a {
+    color: #282828;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.our_star_wepper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.our_star_wepper img {
+    width: 15px;
+}
+
+.our_star_wepper span {
+    color: #282828;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 10px;
+}
+
+.our_product_hedding p {
+    color: #282828;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149%;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.play_store_wepper {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    gap: 10px;
+}
+
+.left_side_images {
+    text-align: start;
+}
+
+.right_side_images img {
+    width: 80%;
+}
+
+.our_product_wepper_bottom {
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:767px) {
+    .nav-tabs .nav-link {
+        padding: 0 15px 15px 0px;
+    }
+
+    .play_store_wepper img {
+        width: 100px;
+    }
+
+}
+
+@media (max-width:575px) {
+    .row_flex_only {
+        flex-direction: column-reverse;
+    }
+
+    .nav-tabs .nav-link.active {
+        font-size: 16px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+
+    .our_product_wepper_main {
+        margin-top: 40px;
+    }
+
+    .bg_color_our_product_weeper img {
+        border-radius: 10px;
+    }
+
+    .our_product_hedding h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .our_product_hedding a {
+        font-size: 16px;
+    }
+
+    .right_side_images img {
+        width: 100%;
+    }
+
+    .ourproducts_tabs .nav-tabs {
+        padding: 30px 0;
+    }
+}

@@ -16,6 +16,7 @@ import ProductPortfolioPage from './Components/Shared/OurPortfolio/ProductPortfo
 import ProductPortfolio from './Components/Shared/OurPortfolio/ProductPortfolio';
 import JoinOurTeam from './Components/Shared/Join/JoinOurTeam';
 import OurPartner from './Components/Shared/OurPartners/OurPartner';
+import OurProducts from './Components/Shared/OurProducts/OurProducts';
 
 function App() {
   return (
@@ -36,8 +37,8 @@ function App() {
           <Route exact path="/product-portfolio" element={<ProductPortfolioPage />} />
           <Route exact path="/join-our-team" element={<JoinOurTeam />} />
           <Route exact path="/our-partner" element={<OurPartner />} />
-          
-    
+          <Route exact path="/our-products" element={<OurProducts />} />
+
         </Routes>
       </HashRouter>
     </div>
